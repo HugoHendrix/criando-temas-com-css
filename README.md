@@ -16,3 +16,5 @@ A :has()pseudoclasse não pode ser aninhada dentro de outra :has(). Além disso,
   <a href="https://www.youtube.com/watch?v=XyTYr07OM7c&t=2404s">Maik Brito da Rocketseat explicando sobre o assunto.</a>
   
   <a href="https://caniuse.com/">Consulte aqui as features antes de sair usando. https://caniuse.com/</a>
+  
+  <a href="https://www.gradientmagic.com/">Gradient Magic - Backgrounds maneiros</a>
