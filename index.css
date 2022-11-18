@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;  
+    }
+  
+  #light,
+  :root:has(#light:checked) {
+    --bg-color:white;
+    --text-color: #121214;
+  }
+  #dark,
+  :root:has(#dark:checked) {
+    --bg-color:#121214;
+    --text-color: white;
+  }
+  
+  #blue,
+  :root:has(#blue:checked) {
+    --bg-color:aqua;
+    --text-color: 121214;
+  }
+  #green,
+  :root:has(#green:checked) {
+    --bg-color:darkgreen;
+    --text-color: white;
+  }
+  /*HAS FAZ UMA CONFERÊNCIA PRA VER ONDE ESTA CHECKED E 
+  APLICA O TEMA, BEM SEMELHANTE AO IF  */
+  
+  body {
+    font-family: sans-serif;
+    background-color: var(--bg-color);
+    color:var(--text-color);
+    margin: auto;
+  }
+  
+    article { 
+      width: 30rem;
+      margin: 2rem auto;
+      border: 2px solid black;
+      padding: 1rem;
+      border-radius: 1.6rem;
+      opacity: 0.9;
+      box-shadow:  0 0 1rem rgb(0 0 0 / 0.2);
+  
+     
+   }
+  
+   article p {
+     opacity: 0.7;  /* Dica para o texto  ficar mais suave.*/
+     padding: 1rem;
+     
+   }
+
+   a {
+    text-decoration: none;
+}
+  
+  /* CAIXA PARA TROCAR OS TEMAS  */
+  
+  ul {
+    display: flex;  /* para alinhar lateralmente*/
+    list-style-type: none; /* retirar estilos */
+    gap: 1rem; /* espaçamento */
+  
+    background: whitesmoke;
+    box-shadow:  0 0 1rem rgb(0 0 0 / 0.2); 
+    
+    
+    position: fixed;  /* permite que o elemento fique fixo na página,       mesmo dando scroll.*/
+    bottom: 1rem;  /*Deixa o elemento na parte inferior da tela*/
+    padding: 1rem;
+    border-radius: 8px;
+    left: 50%; /*Deixa o elemento no meio da tela, mais no inicio da caixa*/
+    transform:translateX(-50%); /*E assim alinha no meio da caixa*/
+  /*Note que bottom e left por exemplos serão liberados somente após definir
+  um posicionamento como fixed*/
+  }
+  /*Estilizando a bolinha do input com essa opção abaixo*/
+  input[type="radio"] {
+    appearance: none;
+    border: 2px solid var(--input-color);
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    cursor: pointer;
+  
+   
+  }
+  /*Estilizando a opção quando esta marcada/assinalada. Checked*/
+  input[type="radio"]:checked {
+    background-color: var(--input-color);
+  
+  }
+  
+  /*VARIAVEIS DO CSS */
+  #dark {
+    --input-color:black;
+  
+  }
+  
+  #light {
+    --input-color:gray;
+  }
+  
+  #blue {
+    --input-color:blue;
+  }
+  
+  #green {
+    --input-color:green;
+  }
