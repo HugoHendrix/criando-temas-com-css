@@ -58,10 +58,11 @@ body {
 
 article {
   width:74%;
-  margin: 2.2rem auto;
+  margin: 7rem auto;
   border: 1px solid black;
   padding: 1.5rem;
   border-radius: 2rem;
+  
   box-shadow: 0 0 1rem rgb(0 0 0 / 0.2);
 
 
@@ -85,7 +86,7 @@ ul {
   /* para alinhar lateralmente*/
   list-style-type: none;
   /* retirar estilos */
-  gap: 3rem;
+  gap: 2.5rem;
   /* espaçamento */
 
   background: whitesmoke;
@@ -145,8 +146,12 @@ input[type="radio"]:checked {
 
 
 
-footer {
+.social {
   display:flex;
   gap: 1rem;
   justify-content: center;
+  align-items:center;
+  text-align:center;
+  
+
 }
