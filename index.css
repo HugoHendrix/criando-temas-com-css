@@ -52,7 +52,7 @@ body {
 }
 
 article {
-  width: 60%;
+  width:74%;
   margin: 2.2rem auto;
   border: 1px solid black;
   padding: 1.5rem;
@@ -80,7 +80,7 @@ ul {
   /* para alinhar lateralmente*/
   list-style-type: none;
   /* retirar estilos */
-  gap: 1rem;
+  gap: 3rem;
   /* espaçamento */
 
   background: whitesmoke;
@@ -105,8 +105,8 @@ ul {
 input[type="radio"] {
   appearance: none;
   border: 2px solid var(--input-color);
-  width: 1rem;
-  height: 1rem;
+  width: 1.6rem;
+  height: 1.6rem;
   border-radius: 50%;
   cursor: pointer;
 
